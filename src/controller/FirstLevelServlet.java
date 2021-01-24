@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -51,7 +52,7 @@ public class FirstLevelServlet extends HttpServlet {
 
 		if (seeAnswer != null) {
 			if (lowerCase != null) {
-				String output = string.lower(input);
+				String output = string.toLower(input);
 				// System.out.println(output);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
@@ -68,7 +69,7 @@ public class FirstLevelServlet extends HttpServlet {
 
 		if (seeAnswer != null) {
 			if (upperCase != null) {
-				String output = string.upper(input);
+				String output = string.toUpper(input);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);
@@ -77,7 +78,7 @@ public class FirstLevelServlet extends HttpServlet {
 
 		if (seeAnswer != null) {
 			if (firstCharacter != null) {
-				String output = string.firstCharacter(input);
+				String output = string.firstChar(input);
 				request.setAttribute("output", output);
 				RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/level1.jsp");
 				rd.forward(request, response);

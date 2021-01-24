@@ -21,29 +21,23 @@ public class StringBoolean {
 	}
 
 	public boolean contains(String input1, String input2) {
-		boolean output = input1.contains(input2);
-		System.out.println(output);
-		return output;
+		return input1.contains(input2);
 	}
 
 	public boolean endsWith(String input1, String input2) {
-		boolean output = input1.endsWith(input2);
-		return output;
+		return input1.endsWith(input2);
 	}
 
 	public boolean startsWith(String input1, String input2) {
-		boolean output = input1.startsWith(input2);
-		return output;
+		return input1.startsWith(input2);
 	}
 
 	public boolean equals(String input1, String input2) {
-		boolean output = input1.equals(input2);
-		return output;
+		return input1.equals(input2);
 	}
 
 	public boolean equalsIgnoreCase(String input1, String input2) {
-		boolean output = input1.equalsIgnoreCase(input2);
-		return output;
+		return input1.equalsIgnoreCase(input2);
 	}
 
 }
